@@ -80,10 +80,11 @@ a {
   margin-top: 1rem;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 
 .modal-overlay {
-  background: rgba(0, 0, 0, 0.695);
+  background: rgba(0, 0, 0, 0.745);
   top: 0;
   left: 0;
   width: 100%;
@@ -94,12 +95,78 @@ a {
   position: fixed;
 }
 
-.cardCadastroSms {
-  background-color: aliceblue;
+
+
+.cadastrar {
   width: 30vh;
-  height: 10vh;
+  height: 6vh;
+  border: none;
+  border-radius: 3rem;
+  padding: 1rem;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cadastrar:hover {
+    background-color: rgb(98, 19, 172);
+    transition: 0.5s;
+}
+
+
+
+
+.cardCadastro {
+  background-color: aliceblue;
+  width: 35vh;
+  height: 15vh;
   padding: 2.5rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.h3Cadastro {
+  text-align: center;
+  color: brown;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+.backLogin {
+  width: 25vh;
+  height: 6vh;
+  background-color: blueviolet;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.backLogin:hover {
+  background-color: rgb(85, 14, 152);
+  transition: 0.5s;
+}
+
+.h3Confirm {
+  color: rgb(252, 243, 233);
+  font-size: 1rem;
+  width: 100%;
+ 
   
 
 }

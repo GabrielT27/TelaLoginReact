@@ -94,17 +94,23 @@ function Cadastro() {
 
 
                     </div>
-
+                    </div>
+                        
                         <button onClick={() => setIsModalOpen(true)} className='cadastrar'>
                             Cadastrar
                         </button>
-                </div>
+                        
+                       
+               
           
 
           {isModalOpen && (
                     <div className='modal-overlay'>
-                        <div className='cardCadastroSms'>
-                    <h3>OLA MUNDO</h3>
+                        <div className='cardCadastro'>
+                    <h3 className='h3Cadastro'>CADASTRO REALIZADO COM SUCESSO !</h3>
+                    <button className='backLogin'>
+                    <h3 className='h3Confirm'>Voltar para Login</h3>
+                    </button>
                     </div>
                     </div>
                 )}
