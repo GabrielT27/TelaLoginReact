@@ -8,6 +8,14 @@ import '../cadastro.css'
 function Cadastro() {
     const [count, setCount] = useState(0)
 
+
+     // --- ESTADOS PARA O MODAL(PADRÃO PARA MODAL FUNCIONAR)
+
+  // Este é o interruptor de luz da sala do modal.
+  // Por padrão é 'false' (luz apagada/modal escondido)
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <div className='body'>
             <div className='container'>
@@ -22,7 +30,7 @@ function Cadastro() {
                         <div className='grupo'>
 
                             <h3>Nome</h3>
-                            <input type="value" placeholder='Gabriel' />
+                            <input type="text" placeholder='Gabriel' />
                         </div>
 
 
@@ -86,14 +94,27 @@ function Cadastro() {
 
 
                     </div>
-                    {/* Use o Link para navegar para a rota que você criou no App.jsx */}
 
-                    <Link to="/cadastro">Cadastrar</Link>
-
+                        <button onClick={() => setIsModalOpen(true)} className='cadastrar'>
+                            Cadastrar
+                        </button>
                 </div>
+          
+
+          {isModalOpen && (
+                    <div className='modal-overlay'>
+                        <div className='cardCadastroSms'>
+                    <h3>OLA MUNDO</h3>
+                    </div>
+                    </div>
+                )}
+
             </div>
-        </div>
-    )
-}
+        </div>  // Fecha div body 0
+    ); // Fecha o return
+} // Fecha a função Cadastro
 
 export default Cadastro;
+
+      
+
