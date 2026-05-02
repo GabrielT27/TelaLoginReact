@@ -108,9 +108,15 @@ function Cadastro() {
                     <div className='modal-overlay'>
                         <div className='cardCadastro'>
                     <h3 className='h3Cadastro'>CADASTRO REALIZADO COM SUCESSO !</h3>
+
+
+                    <Link to="/" style={{ textDecoration: 'none', display: 'block', margin:'0'}}> {/*Adicionando rota para voltar a opção de login através da tag LINK*/}
                     <button className='backLogin'>
                     <h3 className='h3Confirm'>Voltar para Login</h3>
                     </button>
+
+
+                    </Link>
                     </div>
                     </div>
                 )}
