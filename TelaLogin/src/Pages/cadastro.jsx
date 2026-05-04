@@ -19,8 +19,8 @@ function Cadastro() {
     return (
         <div className='body'>
             <div className='container'>
-                <h2>Cadastro</h2>
 
+                <h2>Cadastro</h2>
 
 
                 <div className='card'>
@@ -34,7 +34,6 @@ function Cadastro() {
                         </div>
 
 
-
                         <div className='grupo'>
                             <h3>Sobrenome</h3>
                             <input type="text" placeholder='Marques' />
@@ -44,15 +43,11 @@ function Cadastro() {
                     <div className='arco'>
 
 
-
-
                         <div className='grupo'>
                             <h3>EMAIL</h3>
                             <input type="email" placeholder='example@gmail.com' />
 
                         </div>
-
-
 
 
                         <div className='grupo'>
@@ -72,16 +67,12 @@ function Cadastro() {
                         </div>
 
 
-
-
                         <div className='grupo'>
                             <h3>Data Nascimento</h3>
                             <input type="date" />
 
                         </div>
                     </div>
-
-
 
 
                     <div className='login-icons'>
@@ -122,7 +113,7 @@ function Cadastro() {
                 )}
 
             </div>
-        </div>  // Fecha div body 0
+        </div>  // Fecha div body 
     ); // Fecha o return
 } // Fecha a função Cadastro
 

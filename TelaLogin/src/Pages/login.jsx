@@ -10,14 +10,20 @@ function Login() {
 
   return (
     <div className='body'>
-      <div className='container'>
-        <h2>Hello, World</h2>
+      <div className='cardzao'>
+        <h2>Login</h2>
+        <div className='Janete'>
+          <img src="/JaneteIcon.png" alt="" className='JaneteIcon' />
+</div>
+     
         <div className='card'>
           <h3>Usuário</h3>
           <input type="email" placeholder='example@gmail.com' />
           <h3>Senha</h3>
           <input type="password" placeholder='*****'/>
+           
           <a href="">Esqueci a senha</a>
+          
           <div className='login-icons'>
 
             <img src="/googleIcon.png" className='icon' alt="" />
@@ -30,7 +36,7 @@ function Login() {
           </div>
             {/* Use o Link para navegar para a rota que você criou no App.jsx */}
             
-            <Link to="/cadastro">Cadastrar</Link>
+            <Link to="/cadastro" className='Cadastrar' >Cadastrar</Link>
         </div>
       </div>
     </div>
